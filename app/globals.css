@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --background: #101010;
+  --foreground: #ffffff;
+  --card: #161616;
+  --card-foreground: #ffffff;
+  --popover: #161616;
+  --popover-foreground: #ffffff;
+  --primary: #8f00ff;
+  --primary-foreground: #ffffff;
+  --secondary: #1e1a24;
+  --secondary-foreground: #ffffff;
+  --muted: #1c1c1c;
+  --muted-foreground: #9f9f9f;
+  --accent: #ba62ff;
+  --accent-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.12);
+  --input: rgba(255, 255, 255, 0.14);
+  --ring: #8f00ff;
+
+  --gruxz-bg: #101010;
+  --gruxz-purple: #8f00ff;
+  --gruxz-purple-light: #ba62ff;
+  --gruxz-body: #dad7d7;
+  --gruxz-muted: #9f9f9f;
+  --gruxz-online: #00ff85;
+  --gruxz-offline: #ff0000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gruxz-bg: var(--gruxz-bg);
+  --color-gruxz-purple: var(--gruxz-purple);
+  --color-gruxz-purple-light: var(--gruxz-purple-light);
+  --color-gruxz-body: var(--gruxz-body);
+  --color-gruxz-muted: var(--gruxz-muted);
+  --color-gruxz-online: var(--gruxz-online);
+  --color-gruxz-offline: var(--gruxz-offline);
+
+  --font-heading: var(--font-josefin), sans-serif;
+  --font-sans: var(--font-open-sans), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #101010;
+  color: #ffffff;
+  overflow-x: clip;
+}
+
+body {
+  background-color: #101010;
+  color: #ffffff;
+  font-family: var(--font-open-sans), sans-serif;
+  overflow-x: clip;
+}
+
+/* Exact Figma Gradient & Effect Tokens */
+.text-gruxz-logo {
+  background-image: linear-gradient(108deg, #8f00ff 0%, #ffffff 195%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gruxz-cta {
+  background-image: linear-gradient(105.3deg, #8f00ff 4%, #ffffff 248%);
+}
+
+.bg-gruxz-play-btn {
+  background-image: linear-gradient(125deg, #8f00ff 0%, #ba62ff 100%);
+}
+
+.bg-gruxz-badge-radial {
+  background-image: radial-gradient(50% 50% at 50% 50%, #ba62ff 0%, #8f00ff 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-gruxz-fade-top {
+  background-image: linear-gradient(
+    180deg,
+    #101010 0%,
+    rgba(16, 16, 16, 0.8) 27.7%,
+    rgba(16, 16, 16, 0.5) 55%,
+    rgba(16, 16, 16, 0.1) 80.8%,
+    rgba(16, 16, 16, 0) 100%
+  );
+}
+
+.bg-gruxz-fade-bottom {
+  background-image: linear-gradient(
+    0deg,
+    #101010 0%,
+    rgba(16, 16, 16, 0.8) 27.7%,
+    rgba(16, 16, 16, 0.5) 55%,
+    rgba(16, 16, 16, 0.1) 80.8%,
+    rgba(16, 16, 16, 0) 100%
+  );
+}
